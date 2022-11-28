@@ -45,3 +45,15 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+.container{
+  display: grid;
+  grid-template: 100px 100px 500px 100px/300px 900px;
+  gap: 15px;
+}
+.header,
+.footer{
+  grid-column-end: span 2;
+}
+.sidebar{
+  grid-area: 2/1/4/2;
+}
